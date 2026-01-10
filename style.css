@@ -13,7 +13,7 @@ body{
 
 
 .main{
-    background-image: url("assests/bg.jpg");
+    background-image: url("public/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
