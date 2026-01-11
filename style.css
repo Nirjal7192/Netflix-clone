@@ -11,8 +11,8 @@
 body{
     background-color: black;
     overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
 
 .main{
     background-image: url("/bg.jpg");
@@ -83,9 +83,10 @@ nav button{
 
 .btn{
     padding: 4px 8px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: rgba(23, 23, 23, 0.2);
     color: white;
+    border: 2px solid white;
     box-sizing: border-box;
     margin-right: 20px;
 }
@@ -96,6 +97,7 @@ nav button{
     color: white;
     padding: 3px 24px;
     font-size: 20px;
+    border: none;
     border-radius: 7px;
     margin-left: 20px;
 }
@@ -105,13 +107,14 @@ nav button{
     font-size: 20px;
     border-radius: 3px;
     background-color: rgba(23, 23, 23, 0.2);
-    border: 2px solid rgba(240, 226, 226, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.925);
     color: white;
 }
 
 .btn-red-sm{
     background-color: red;
     color: white;
+    border: none;
     border-radius: 7px;
 }
 
@@ -210,3 +213,151 @@ nav button{
   opacity: 0.85;
 }
 
+/* =========================
+   Large tablets & small laptops (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .hero > :first-child {
+    font-size: 38px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 20px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 190px;
+    height: 310px;
+  }
+
+  .feature-card {
+    width: 260px;
+    height: 210px;
+  }
+
+  .feature-row {
+    gap: 16px;
+  }
+}
+
+
+/* =========================
+   Tablets (<= 768px)
+========================= */
+@media (max-width: 768px) {
+  nav {
+    max-width: 95vw;
+    height: 90px;
+  }
+
+  .hero {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero > :first-child {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 16px;
+  }
+
+  .box3 {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .card {
+    width: 170px;
+    height: 280px;
+  }
+
+  .feature-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-card {
+    width: 45%;
+    height: auto;
+  }
+}
+
+
+/* =========================
+   Mobile phones (<= 480px)
+========================= */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .btn {
+    margin-right: 0;
+  }
+
+  .btn-red {
+    margin-left: 0;
+    font-size: 16px;
+    padding: 6px 18px;
+  }
+
+  .main input {
+    font-size: 16px;
+    padding: 6px 18px;
+    width: 90%;
+  }
+
+  .hero > :first-child {
+    font-size: 26px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .box3 {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .card {
+    width: 140px;
+    height: 230px;
+  }
+
+  .features {
+    padding: 40px 20px;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .feature-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+    height: auto;
+  }
+}
