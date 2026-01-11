@@ -15,7 +15,7 @@ body{
 
 
 .main{
-    background-image: url("public/bg.jpg");
+    background-image: url("/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -145,7 +145,7 @@ nav button{
 }
 
 .card {
-  width: 223px;
+  width: 222px;
   height: 360px;
   background: #111;
   border-radius: 20px;
